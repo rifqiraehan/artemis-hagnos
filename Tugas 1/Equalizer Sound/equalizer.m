@@ -5,8 +5,8 @@
 n = 16; % Order of the filters
 
 % Low Pass Filter (LPF)
-f_lpf = [0, 0.00227, 0.003, 0.01, 0.5, 1];
-m_lpf = [1, 1, 0.8, 0.1, 0, 0];
+f_lpf = [0, 0.00227, 0.6, 0.9, 1];
+m_lpf = [1, 0.8, 0, 0, 0];
 b_lpf = fir2(n, f_lpf, m_lpf);
 
 % Band Pass Filters (BPF)
@@ -43,9 +43,8 @@ m_bpf8 = [0, 0.8, 0.8, 0];
 b_bpf8 = fir2(n, f_bpf8, m_bpf8);
 
 % High Pass Filter (HPF)
-f_hpf = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-m_hpf = [0, 0, 0, 0.25, 0.707, 0.95, 1, 1, 1];
-f_hpf = f_hpf / 8;
+f_hpf = [0, 0.4, 0.704, 1];
+m_hpf = [0, 0, 0.8, 1];
 b_hpf = fir2(n, f_hpf, m_hpf);
 
 % Initialize amplitude control values

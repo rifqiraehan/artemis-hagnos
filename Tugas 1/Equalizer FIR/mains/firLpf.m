@@ -1,7 +1,7 @@
 clear all; clc;
 
-f = [0, 0.00227, 0.003, 0.01, 0.5, 1]; % Frekuensi ter-normalisasi
-m = [1, 1, 0.8, 0.1, 0, 0];
+f = [0, 0.00227, 0.6, 0.9, 1];
+m = [1, 0.8, 0, 0, 0];
 n = 16;                              % orde 16, 1/2 frekuensi sampling = 8kHz
 fs2 = 22;                             % hitung koefisien filter
 b = fir2(n, f, m);
