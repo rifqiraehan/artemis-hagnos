@@ -1,72 +1,74 @@
-[
-    {
-        "No" : "1",
-        "Jenis filter" : "LPF",
-        "Frekuensi cut-off (Hz)" : "50",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "2",
-        "Jenis filter" : "BPF 1",
-        "Frekuensi cut-off (Hz)" : "100 ± 20",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "3",
-        "Jenis filter" : "BPF 2",
-        "Frekuensi cut-off (Hz)" : "200 ± 40",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "4",
-        "Jenis filter" : "BPF 3",
-        "Frekuensi cut-off (Hz)" : "400 ± 80",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "5",
-        "Jenis filter" : "BPF 4",
-        "Frekuensi cut-off (Hz)" : "800 ± 160",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "6",
-        "Jenis filter" : "BPF 5",
-        "Frekuensi cut-off (Hz)" : "1.600 ± 320",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "7",
-        "Jenis filter" : "BPF 6",
-        "Frekuensi cut-off (Hz)" : "3.200 ± 640",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "8",
-        "Jenis filter" : "BPF 7",
-        "Frekuensi cut-off (Hz)" : "6.400 ± 1.280",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "9",
-        "Jenis filter" : "BPF 8",
-        "Frekuensi cut-off (Hz)" : "12.800 ± 2.560",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    },
-    {
-        "No" : "10",
-        "Jenis filter" : "HPF",
-        "Frekuensi cut-off (Hz)" : "15.500",
-        "Frekuensi sampling (Hz)" : "44.000",
-        "Orde (N)" : "16"
-    }
-]
+{
+    "data": [
+        {
+            "No": "1",
+            "Jenis filter": "LPF",
+            "Frekuensi cut-off (Hz)": "50",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "2",
+            "Jenis filter": "BPF 1",
+            "Frekuensi cut-off (Hz)": "100 ± 20",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "3",
+            "Jenis filter": "BPF 2",
+            "Frekuensi cut-off (Hz)": "200 ± 40",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "4",
+            "Jenis filter": "BPF 3",
+            "Frekuensi cut-off (Hz)": "400 ± 80",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "5",
+            "Jenis filter": "BPF 4",
+            "Frekuensi cut-off (Hz)": "800 ± 160",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "6",
+            "Jenis filter": "BPF 5",
+            "Frekuensi cut-off (Hz)": "1.600 ± 320",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "7",
+            "Jenis filter": "BPF 6",
+            "Frekuensi cut-off (Hz)": "3.200 ± 640",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "8",
+            "Jenis filter": "BPF 7",
+            "Frekuensi cut-off (Hz)": "6.400 ± 1.280",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "9",
+            "Jenis filter": "BPF 8",
+            "Frekuensi cut-off (Hz)": "12.800 ± 2.560",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        },
+        {
+            "No": "10",
+            "Jenis filter": "HPF",
+            "Frekuensi cut-off (Hz)": "15.500",
+            "Frekuensi sampling (Hz)": "44.000",
+            "Orde (N)": "16"
+        }
+    ]
+}
