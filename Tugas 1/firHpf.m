@@ -1,6 +1,6 @@
 clear all; clc;
 
-f = [0, 0.4, 0.704, 1];
+f = [0, 0.4, 0.681, 1];
 m = [0, 0, 0.8, 1];
 n = 16;                              % orde 16, 1/2 frekuensi sampling = 8kHz
 fs2 = 22;                             % hitung koefisien filter

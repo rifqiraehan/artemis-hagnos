@@ -3,8 +3,12 @@
 /UTS
 /Math
 /GUI-matlab-reference
+/Ath0 Archives
 *.mp3
 *.m4a
 *.md
 *.dart
 ffmpeg-command.txt
+*/archives
+*/Archives
+/Praktikum 12

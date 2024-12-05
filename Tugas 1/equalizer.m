@@ -1,7 +1,8 @@
+clear all;
+
 % Load the input music signal
 [x, fs] = audioread('COTE30.wav');
 
-% Design filters
 n = 16; % Order of the filters
 
 % Low Pass Filter (LPF)
@@ -51,34 +52,40 @@ b_hpf = fir2(n, f_hpf, m_hpf);
 A = 1; B = 1; C = 1; D = 1; E = 1; F = 1; G = 1; H = 1; I = 1; J = 1;
 
 % Apply filters to the input signal
-y1 = filter(b_lpf, 1, x) * A;
-y2 = filter(b_bpf1, 1, x) * B;
-y3 = filter(b_bpf2, 1, x) * C;
-y4 = filter(b_bpf3, 1, x) * D;
-y5 = filter(b_bpf4, 1, x) * E;
-y6 = filter(b_bpf5, 1, x) * F;
-y7 = filter(b_bpf6, 1, x) * G;
-y8 = filter(b_bpf7, 1, x) * H;
-y9 = filter(b_bpf8, 1, x) * I;
-y10 = filter(b_hpf, 1, x) * J;
+y1 = conv((A * b_lpf), x);
+y2 = conv((B * b_bpf1), x);
+y3 = conv((C * b_bpf2), x);
+y4 = conv((D * b_bpf3), x);
+y5 = conv((E * b_bpf4), x);
+y6 = conv((F * b_bpf5), x);
+y7 = conv((G * b_bpf6), x);
+y8 = conv((H * b_bpf7), x);
+y9 = conv((I * b_bpf8), x);
+y10 = conv((J * b_hpf), x);
 
-% Combine the filtered signals
-y = y1 + y2 + y3 + y4 + y5 + y6 + y7 + y8 + y9 + y10;
+y = conv((A * b_lpf + B * b_bpf1 + C * b_bpf2 + D * b_bpf3 + E * b_bpf4 +  F * b_bpf5 +  G * b_bpf6 +  H * b_bpf7 + I * b_bpf8 + J * b_hpf), x);
+
+y_signals = {y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y};
+
+figure_titles = {
+    'Sinyal Audio Filter LPF', 'Sinyal Audio Filter BPF1', 'Sinyal Audio Filter BPF2', 'Sinyal Audio Filter BPF3', 'Sinyal Audio Filter BPF4', 'Sinyal Audio Filter BPF5', 'Sinyal Audio Filter BPF6', 'Sinyal Audio Filter BPF7', 'Sinyal Audio Filter BPF8', 'Sinyal Audio Filter HPF', 'Sinyal Audio Filter Penuh'
+};
 
 % Plot the input and output signals
-figure;
-subplot(2, 1, 1);
-plot(x);
-title('Input Signal');
-xlabel('Sample');
-ylabel('Amplitude');
-
-subplot(2, 1, 2);
-plot(y);
-title('Output Signal');
-xlabel('Sample');
-ylabel('Amplitude');
+for i = 1:length(y_signals)
+    figure(i);
+    subplot(2,1,1);
+    plot(x);
+    title('Sinyal Audio Asli');
+    xlabel('Indeks Sampling');
+    ylabel('Amplitudo');
+    subplot(2,1,2);
+    plot(y_signals{i});
+    title(figure_titles{i});
+    xlabel('Indeks Sampling');
+    ylabel('Amplitudo');
+end
 
 % Save the output signal
 % audiowrite('output_lagu.wav', y, fs);
-sound(y, fs);
+% sound(y, fs);
